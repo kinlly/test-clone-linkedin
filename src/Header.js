@@ -3,9 +3,18 @@ import './Header.css'
 import Headeroptions from './Headeroptions';
 import SearchIcon from '@material-ui/icons/Search';
 import { BusinessCenter, Chat, Home, Notifications, SupervisorAccount } from '@material-ui/icons';
+import { useDispatch } from 'react-redux';
+import { auth } from './firebase';
+import { logout } from './features/userSlice';
 
 
 function Header() {
+    const dispatch = useDispatch();
+    const logoutOfApp = () => {
+        dispatch(logout());
+        auth.signOut();
+    };
+
     return (
         <div className="header">
             <div className="header__left">
@@ -22,7 +31,9 @@ function Header() {
                 <Headeroptions Icon={Chat} title="Messaging"/> 
                 <Headeroptions Icon={Notifications} title="Notifications"/>
                 
-                <Headeroptions avatar={Notifications} title="me"/>
+                <Headeroptions 
+                onClick={logoutOfApp}
+                avatar={Notifications} title="me"/>
             </div>            
             
         </div>
