@@ -3,9 +3,9 @@ import './Header.css'
 import Headeroptions from './Headeroptions';
 import SearchIcon from '@material-ui/icons/Search';
 import { BusinessCenter, Chat, Home, Notifications, SupervisorAccount } from '@material-ui/icons';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { auth } from './firebase';
-import { logout } from './features/userSlice';
+import { logout, selectUser } from './features/userSlice';
 
 
 function Header() {
@@ -33,7 +33,7 @@ function Header() {
                 
                 <Headeroptions 
                 onClick={logoutOfApp}
-                avatar={Notifications} title="me"/>
+                avatar={true} title="me"/>
             </div>            
             
         </div>

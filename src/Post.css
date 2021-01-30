@@ -31,3 +31,7 @@
 .post__button{
     display:flex;
 }
+
+.MuiAvatar-circle{
+    border: 1px solid #dfdfdf;
+}

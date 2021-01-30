@@ -1,0 +1,34 @@
+.widgets{
+    top: 80px;
+    position: sticky;
+    flex: 0.2;
+    border-radius: 10px;
+    text-align:left;
+    height: fit-content;
+    border: 1px solid rgb(187, 188, 189);
+    border-bottom: 0;
+    border-radius: 10px ;
+    background-color: white;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.widgets_header{
+    display: flex;
+    padding:10px;
+    font-size:12px;
+}
+
+.widgets_header > h2{
+    margin-right: 10px;
+}
+
+.widgets_article{
+    display: flex;
+}
+
+.widget__articleLeft{
+    color: #0177b7;
+    margin-right: 5px;
+}
+
