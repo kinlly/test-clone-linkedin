@@ -1,15 +1,15 @@
 .feed {
-    flex: 0.6;
+    flex: 0.5;
     margin: 0 20px;
 }
 
 .feed__inputContainer{
-    padding:10px;
+    padding:20px;
     background-color: white;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
-    
+    border: 1px solid rgba(0,0,0,.15);
 }
 
 .feed__input{
@@ -40,5 +40,5 @@
 }
 .feed__inputOptions{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }

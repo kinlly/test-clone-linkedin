@@ -9,6 +9,7 @@ import Login from './Login';
 import Sidebar from './Sidebar';
 import Widgets from './Widgets';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import AdTop from './Adstop';
 
 function App() {
   const user = useSelector(selectUser);
@@ -38,7 +39,8 @@ function App() {
         {!user ? (
           <Login />
         ) : (
-
+          <>
+            <AdTop/>
             <div className="app__body">
 
               <Switch>
@@ -55,6 +57,7 @@ function App() {
               </Switch>
 
             </div>
+            </>
           )
         }
       </div>

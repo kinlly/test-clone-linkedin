@@ -1,34 +1,121 @@
 .widgets{
+    flex: 0.3;
     top: 80px;
     position: sticky;
-    flex: 0.2;
+    height: fit-content;
+}
+.widget__content{
     border-radius: 10px;
     text-align:left;
-    height: fit-content;
-    border: 1px solid rgb(187, 188, 189);
-    border-bottom: 0;
+    border: 1px solid rgba(0,0,0,.15);
     border-radius: 10px ;
     background-color: white;
     padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .widgets_header{
     display: flex;
     padding:10px;
     font-size:12px;
+    padding-bottom: 5px;
 }
 
 .widgets_header > h2{
     margin-right: 10px;
+    margin-left: 5px;
 }
 
 .widgets_article{
     display: flex;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 .widget__articleLeft{
-    color: #0177b7;
+    color: #808080; 
     margin-right: 5px;
+    margin-left: 0px;
+}
+.widget__articleLeft > svg {
+    height: 10px;
+    width: 10px;
+}
+.widget__articleRight > h4{
+    color: #5e5e5e;
+    font-weight: 600;
+}
+.widget__articleRight > p{
+    font-size: 0.9rem;
+    line-height: 1.33333;
+}
+.widgets_article{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.widgets_article:hover{
+    background-color: #bdbdbd63;
 }
 
+.widgets_header > svg{
+    margin-left: auto;
+    margin-right: 10px;
+    color:rgb(92, 92, 92);
+}
+
+.widgets_headerAds{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-weight: 400;
+}
+
+
+.widgets__bodyAds > h4{
+    color: rgba(0,0,0,0.55);
+    font-size: 12px;
+    line-height: 16px;
+    max-height: 32px;
+    max-width: 240px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.widgets__bodyAds > p {
+    color: rgba(0,0,0,0.7);
+    font-size: 15px;
+    line-height: 20px;
+    max-height: 60px; 
+    max-width: 240px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.widgets__bodyAds > p > a {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 5px 20px;
+    border-radius: 15px; 
+    color: #0A66C2;
+    border: 1px solid #0A66C2;
+    text-decoration: none;
+}
+.widgets__bodyAds > p > a:hover {
+    color: #084e94;
+    border: 1px solid #084e94;
+    background-color: #d3e9ff;
+    transition: 400ms;
+}
+.widgetButton{
+    padding-bottom: 20px;
+}

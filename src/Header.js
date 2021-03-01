@@ -17,25 +17,25 @@ function Header() {
 
     return (
         <div className="header">
-            <div className="header__left">
-                <img src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" alt="" />
-                <div className="header__search">
-                    <SearchIcon />
-                    <input type="text" placeholder="Search" />
+            <div className="header__container">
+                <div className="header__left">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" alt="" />
+                    <div className="header__search">
+                        <SearchIcon />
+                        <input type="text" placeholder="Search" />
+                    </div>
+                </div>
+                <div className="header__right">
+                    <Headeroptions Icon={Home} title="Home" />
+                    <Headeroptions Icon={SupervisorAccount} title="My Network" />
+                    <Headeroptions Icon={BusinessCenter} title="Jobs" />
+                    <Headeroptions Icon={Chat} title="Messaging" />
+                    <Headeroptions Icon={Notifications} title="Notifications" />
+                    <Headeroptions
+                        onClick={logoutOfApp}
+                        avatar={true} title="me" />
                 </div>
             </div>
-            <div className="header__right">
-                <Headeroptions Icon={Home} title="Home" />
-                <Headeroptions Icon={SupervisorAccount} title="My Network" />
-                <Headeroptions Icon={BusinessCenter} title="Jobs" />
-                <Headeroptions Icon={Chat} title="Messaging" />
-                <Headeroptions Icon={Notifications} title="Notifications" />
-
-                <Headeroptions
-                    onClick={logoutOfApp}
-                    avatar={true} title="me" />
-            </div>
-
         </div>
     )
 }

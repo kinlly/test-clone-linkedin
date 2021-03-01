@@ -9,9 +9,16 @@
     background-color: white;
     z-index: 999;
 }
+.header__container{
+    display:flex;
+    width:100%;
+    max-width: 1250px;
+}
 
 .header__left{
     display: flex;
+    margin-right: auto;
+    padding-left: 10px;
 }
 
 .header__search{
@@ -36,6 +43,7 @@
 }
 .header__right {
     display: flex;
+    margin-left: auto;
 }
 
 .header__search > svg {

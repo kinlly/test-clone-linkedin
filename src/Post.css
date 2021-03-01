@@ -3,6 +3,8 @@
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.15);
+    padding-bottom: 7px;
 }
 
 .post__header{
@@ -34,4 +36,8 @@
 
 .MuiAvatar-circle{
     border: 1px solid #dfdfdf;
+}
+.post__button{
+    border-top: 1px solid rgba(0,0,0,.15);
+    margin-top: 20px;
 }
