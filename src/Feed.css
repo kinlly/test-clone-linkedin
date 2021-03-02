@@ -29,16 +29,23 @@
 .feed__input > form > input {
     display: flex;
     width: 100%;
-    border: none;
+    border: 0px solid black;
     flex: 1;
     margin-left: 10px;
     outline-width: 0;
     font-weight: 600;
 }
 .feed__input > form > button {
-    display: none;
+    visibility: hidden;
 }
 .feed__inputOptions{
     display: flex;
     justify-content: space-between;
+} 
+input[type="text"]{
+    border: none;
+    border-color: transparent;
+}
+input[type="text"]:focus{
+    outline: none;
 }

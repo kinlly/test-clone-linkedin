@@ -14,7 +14,9 @@ function Login() {
 
     const loginToApp = (e) => {
         e.preventDefault();
-
+        e.stopPropagation();
+        e.nativeEvent.stopImmediatePropagation();
+        
         auth.signInWithEmailAndPassword(email, password).then(
             (userAuth) => {
                 dispatch(

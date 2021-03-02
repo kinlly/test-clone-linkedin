@@ -4,11 +4,12 @@ import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
 import './HeaderOptions.css'
 
-function Headeroptions({ Icon, avatar, title, onClick }) {
+function Headeroptions({ Icon, avatar, title, onClick, idTag }) {
     const user = useSelector(selectUser);
 
     return (
         <div onClick={onClick}
+            id={idTag}
             className="headerOption">
             {Icon && <Icon className="headerOption__icon" />}
             {avatar && (

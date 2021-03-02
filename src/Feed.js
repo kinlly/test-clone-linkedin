@@ -32,7 +32,12 @@ function Feed() {
                     )))
             ))
     }, []);
-
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Event: Form Submit');
+        e.stopPropagation();
+        e.nativeEvent.stopImmediatePropagation();
+    };
     const sendPost = (e) => {
         e.preventDefault();
 
@@ -51,7 +56,7 @@ function Feed() {
             <div className="feed__inputContainer">
                 <div className="feed__input">
                     <CreateIcon />
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <input type="text" value={input} onChange={e => setInput(e.target.value)} />
                         <button type="submit" onClick={sendPost} >Send</button>
                     </form>

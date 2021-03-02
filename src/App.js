@@ -10,6 +10,7 @@ import Sidebar from './Sidebar';
 import Widgets from './Widgets';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AdTop from './Adstop';
+import './AppMedia.css';
 
 function App() {
   const user = useSelector(selectUser);

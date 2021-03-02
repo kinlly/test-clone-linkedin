@@ -1,0 +1,142 @@
+@media (max-width: 1200px) { 
+    .widgets{
+        display: none;
+        visibility: hidden;
+    } 
+    .feed{
+        flex: 0.7 1;
+    } 
+    .sidebar{
+        flex: 0.3 1;
+    } 
+    .adstop > a{
+        font-size: 12px;
+    }
+    input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea {
+  font-size: 16px;
+}
+}
+
+@media (max-width: 896px) { 
+    .sidebar__statPremium{
+        font-size: 12px;
+    }
+    .sidebar__statItems{
+        font-size: 12px;
+    }
+    .sidebar__stat > p {
+        font-size: 12px;
+    }
+    .sidebar__statNumber{
+        font-size: 12px;
+    }
+    .adstop > a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 722px) { 
+    .feed{
+        flex: 1 1;
+    } 
+    .sidebar{
+        display: none;
+        visibility: hidden;
+    } 
+}
+
+@media (max-width: 712px) { 
+    .feed{
+        flex: 1 1;
+    } 
+    .sidebar{
+        display: none;
+        visibility: hidden;
+    } 
+}
+
+@media (max-width: 670px) { 
+    #network{
+        visibility: hidden;
+        display: none;
+    }
+    #home{
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (max-width: 620px) { 
+    #notifications{
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (max-width: 490px) { 
+    #chat{
+        visibility: hidden;
+        display: none;
+    }
+    #jobs{
+        visibility: hidden;
+        display: none;
+    }
+    .feed{
+        margin: 0px;
+    }
+    .feed__inputContainer{
+        border-radius: 0px;
+        border-right: 0px solid black;
+        border-left: 0px solid black;
+    }
+    .post{
+        border-radius: 0px;
+        border-right: 0px solid black;
+        border-left: 0px solid black;
+    }
+    .app__body{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 478px) { 
+    .adstop{
+        visibility: hidden;
+        display: none;
+    }
+    .feed__inputContainer{
+        margin-bottom: 5px;
+    }
+    .inputOption{
+        padding: 5px;
+    }
+    .inputOption > h4 {
+        font-size:12px
+    }
+    .inputOption > svg{
+        width: 20px;
+        height: 20px;
+    } 
+}
+
+
+
+@media (max-width: 562px) { 
+    .adstop > a{
+        font-size: 10px;
+    }
+}
